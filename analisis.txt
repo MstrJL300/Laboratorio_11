@@ -1,0 +1,32 @@
+a. 10 usuarios concurrentes
+
+Los 10 usuarios se demoraron 1 milisegundos en hacer el POST:
+
+1er Usuario: Sample Start: 2015-11-19 12:22:37 COT
+Último Usuario: Sample Start: 2015-11-19 12:22:38 COT
+
+b. 50 usuarios concurrentes.
+
+    Los 50 usuarios se demoraron 1 milisegundos en hacer el POST:
+
+1er Usuario: Sample Start: 2015-11-19 12:19:47 COT
+Último Usuario: Sample Start: 2015-11-19 12:19:48 COT
+
+c. 100 usuarios concurrentes.
+
+    Los 100 usuarios se demoraron 1 milisegundos en hacer el POST:
+
+1er Usuario: Sample Start: 2015-11-19 12:21:14 COT
+Último Usuario: Sample Start: 2015-11-19 12:21:59 COT
+
+El tiempo para cargarse en los 3 casos se encontraba en un rango de 1-3 segundos, el tiempo de conexión se encontraba en un rango de 0-1. El resto de información fue similar en los 3 casos.
+
+Java Visual VM
+
+GPU: Se uso 13,7% 
+Threads: Llego a un punto máximo de 46 Threads en ejecución
+Detalles: Se puede ver a más detalles que los Threads que se ejecutaron se encuentran que del 76 al 100 en estado wait o sleep, el 76 se quedó en wait mientras el resto de Threads se quedaron en sleep. 
+
+Confiabilidad: Usando 10 a 100 usuarios concurrentes se puede determinar que las funciones son de alta confianza.
+
+Conclusiones: La cantidad de GPU que toma la aplicación depende de la cantidad de usuarios concurrentes y también se pueden encontrar Threads que deseen conectarse en estado wait o sleep (usualmente los últimos threads en ejecutarse) para evitar colisiones.
