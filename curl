@@ -1,5 +1,7 @@
 curl -H "Content-Type: application/json" -X POST -d '{ "idproducto" : "5" , "nombre" : "producto 5" , "precio":500 }' http://localhost:8080/products 
 
+jmeter:
+
 { 
 	"idproducto" : 5 , 
 	"nombre" : "producto 5" , 
