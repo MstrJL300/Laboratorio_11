@@ -19,7 +19,7 @@ c. 100 usuarios concurrentes.
 1er Usuario: Sample Start: 2015-11-19 12:21:14 COT
 Último Usuario: Sample Start: 2015-11-19 12:21:59 COT
 
-El tiempo para cargarse en los 3 casos se encontraba en un rango de 1-3 segundos, el tiempo de conexión se encontraba en un rango de 0-1. El resto de información fue similar en los 3 casos.
+El tiempo para cargarse en los 3 casos se encontraba en un rango de 1-3 segundos, el tiempo de conexión se encontraba en un rango de 0-1 segundos. El resto de información fue similar en los 3 casos.
 
 Java Visual VM
 
