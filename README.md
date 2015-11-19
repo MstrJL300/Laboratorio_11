@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 % Escuela Colombiana de Ingeniería
 % Arquitecturas de Software
 % Noviembre 2015
@@ -57,3 +58,6 @@ $ jvisualvm
 
 [JMeter]: http://jmeter.apache.org/
 [ArtOfTesting]: http://artoftesting.com/performanceTesting/restAPIJMeter.html
+=======
+# Laboratorio_11
+>>>>>>> c1c1f716d5031b0b0f581d261c9fee0c6f07be22
