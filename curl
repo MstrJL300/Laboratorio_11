@@ -1,1 +1,2 @@
-curl -H "Content-Type: application/json" -X POST -d '{ "products" : [ { "idproducto" : "5" , "nombre" : "producto 5" , "precio":400} ] }' http://localhost:8080/ordenes 
+curl -H "Content-Type: application/json" -X POST -d '{ "idproducto" : "5" , "nombre" : "producto 5" , "precio":500 }' http://localhost:8080/products 
+
